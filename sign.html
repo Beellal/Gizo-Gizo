@@ -99,11 +99,15 @@
                     </div>
                         
                            
-                           <div class="input-field">
-                            <textarea id="textarea1" class="materialize-textarea" placeholder="Message"></textarea>
-                            <label for="textarea1">Message</label>
-                        </div>
-
+                    <div class="input-field col s12" aria-placeholder="message">
+                      <select>
+                        <option value="" disabled selected></option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                      <label>Message</label>
+                    </div>
 
                               <div class="input-field">
                             <button class="btn">Submit</button>
@@ -239,5 +243,12 @@
     $('.modal').modal();
   });
     </script>
+
+<script>
+   $(document).ready(function(){
+    $('select').formSelect();
+  });
+</script>
+
 </body>
 </html>
